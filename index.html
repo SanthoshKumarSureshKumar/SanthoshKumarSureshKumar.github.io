@@ -3,46 +3,269 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Analyst Profile</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header>
-        <div class="logo">Data Analyst Profile</div>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Santhosh Kumar Suresh Kumar</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills-tools">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
+                    <li><a href="#resume-section">CV / Resume</a></li>
+
+                    <!--<li><a href="assets\resume.pdf" class="download-btn" download>Download CV</a></li>-->
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section class="profile">
-            <div class="profile-image">
-                <img src="profile.jpg" alt="Profile Image">
+
+
+
+    <section id="about">
+        <div class="about-container">
+            <img src="assets\images\santhosh.jpg" alt="Your Photo">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>An Data science expert with proficiency in Power BI, Apache Hive, Hadoop, DBMS, SQL and MS Excel. Skilled in developing and implementing end-to-end data analytical solutions, establishing data science standards, and conducting statistical analysis. Published multiple research papers. Experienced in creating databases, data collection systems, and analytics strategies, with a focus on interpreting data and identifying business trends to support faster decision-making.</p>
             </div>
-            <div class="profile-info">
-                <h1>Data Analyst</h1>
-                <h2>Expert in Data Analysis & Visualization</h2>
-                <p>A seasoned data analyst with proficiency in Python, R, SQL, Tableau, and Excel. Skilled in extracting meaningful insights from data, creating interactive dashboards, and presenting findings to drive business decisions.</p>
-                <div class="buttons">
-                    <button>KNOW MORE</button>
-                    <button>DOWNLOAD CV</button>
+        </div>
+    </section>
+
+
+    <section id="experience">
+        <div class="experience-container">
+            <h2>Experience : 2+ year</h2>
+            <div class="experience-list">
+                <div class="experience-item">
+                    <img src="assets\logos\logo1.png" alt="Logo 1" class="company-logo">
+                    <p>Data Analyst, Office of Commissioner of Police Chennai, Tamil Nadu, India (Feb 2024 - April 2024)</p>
+                </div>
+                <div class="experience-item">
+                    <img src="assets\logos\logo2.png" alt="Logo 2" class="company-logo">
+                    <p>Data Scientist, Tamil Nadu Civil Supply and Corporation, Chennai, Tamil Nadu, India (Jan 2022 - Dec 2023)</p>
                 </div>
             </div>
-        </section>
-        <section class="skills">
-            <h2>Skills</h2>
-            <div class="skill-logos">
-                <img src="python-logo.png" alt="Python">
-                <img src="r-logo.png" alt="R">
-                <img src="sql-logo.png" alt="SQL">
-                <img src="tableau-logo.png" alt="Tableau">
-                <img src="excel-logo.png" alt="Excel">
+        </div>
+    </section>
+
+    <section id="skills-tools">
+        <h2>My Programming Skills</h2>
+        <div class="skills-tools-content">
+            <div class="skills-description">
+                <p>Adept at leveraging a diverse skill set in data analysis, visualization, and project management to drive impactful insights and solutions. Proficient in using advanced analytical tools and methodologies to interpret complex datasets and present findings in an accessible and engaging manner.</p>
+                <div class="toggle-switch">
+                    <button id="toggle-skills" onclick="showSkills()">Skills</button>
+                    <button id="toggle-tools" onclick="showTools()">Tools</button>
+                </div>
             </div>
-        </section>
-    </main>
-</body>
-</html>
+            <div id="skills-container" class="skills-tools-container">
+                <div class="skills-icons">
+                    <div class="skill-item" data-tooltip="HTML5">
+                        <img src="assets\icons\html5.png" alt="HTML5" class="skill-icon">
+                    </div>
+                    <div class="skill-item" data-tooltip="CSS3">
+                        <img src="assets\icons\css3.png" alt="CSS3" class="skill-icon">
+                    </div>
+                    <div class="skill-item" data-tooltip="Python">
+                        <img src="assets\icons\python.png" alt="Python" class="skill-icon">
+                    </div>
+                    <div class="skill-item" data-tooltip="SQL">
+                        <img src="assets\icons\sql.png" alt="SQL" class="skill-icon">
+                    </div>
+                    <div class="skill-item" data-tooltip="R_language">
+                        <img src="assets\icons\r.png" alt="R" class="skill-icon">
+                    </div>
+                    <div class="skill-item" data-tooltip="Java Script">
+                        <img src="assets\icons\javascript.png" alt="R" class="skill-icon">
+                    </div>
+
+                    <!-- Add more skills as needed -->
+                </div>
+            </div>
+            <div id="tools-container" class="skills-tools-container" style="display: none;">
+                <div class="skills-icons">
+                    <div class="skill-item" data-tooltip="Anaconda">
+                        <img src="assets\icons\anaconda.png" alt="Anaconda" class="skill-icon">
+                    </div>
+                    <div class="skill-item" data-tooltip="Power BI">
+                        <img src="assets\icons\powerbi.png" alt="Power BI" class="skill-icon">
+                    </div>
+                    <div class="skill-item" data-tooltip="Hive">
+                        <img src="assets\icons\hive.png" alt="Hive" class="skill-icon">
+                    </div>
+                    <div class="skill-item" data-tooltip="Hadoop">
+                        <img src="assets\icons\hadoop.png" alt="Hadoop" class="skill-icon">
+                    </div>
+                    <div class="skill-item" data-tooltip="Adobe XD">
+                        <img src="assets\icons\adobe-xd.png" alt="Adobe XD" class="skill-icon">
+                    </div>
+                    <div class="skill-item" data-tooltip="Apache">
+                        <img src="assets\icons\apache.png" alt="Apache" class="skill-icon">
+                    </div>
+                    <div class="skill-item" data-tooltip="Command">
+                        <img src="assets\icons\command.png" alt="ommand" class="skill-icon">
+                    </div>
+                    <div class="skill-item" data-tooltip="Jupyter">
+                        <img src="assets\icons\jupyter.png" alt="Jupyter" class="skill-icon">
+                    </div>
+                    <div class="skill-item" data-tooltip="PostgreSQL">
+                        <img src="assets\icons\postgresql.png" alt="PostgreSQL" class="skill-icon">
+                    </div>
+                    <div class="skill-item" data-tooltip="Gephi">
+                        <img src="assets\icons\gephi.png" alt="Gephi" class="skill-icon">
+                    </div>
+                    <div class="skill-item" data-tooltip="Photoshop">
+                        <img src="assets\icons\photoshop.png" alt="Photoshop" class="skill-icon">
+                    </div>
+                    <div class="skill-item" data-tooltip="Pycharm">
+                        <img src="assets\icons\pycharm.png" alt="Pycharm" class="skill-icon">
+                    </div>
+                    <div class="skill-item" data-tooltip="Tableau">
+                        <img src="assets\icons\tableau.png" alt="Tableau" class="skill-icon">
+                    </div>
+                    <div class="skill-item" data-tooltip="Unity">
+                        <img src="assets\icons\unity.png" alt="Unity" class="skill-icon">
+                    </div>
+                    <!-- Add more tools as needed -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        function showSkills() {
+            document.getElementById('skills-container').style.display = 'flex';
+            document.getElementById('tools-container').style.display = 'none';
+        }
+
+        function showTools() {
+            document.getElementById('skills-container').style.display = 'none';
+            document.getElementById('tools-container').style.display = 'flex';
+        }
+    </script>
+
+    <section id="projects">
+        <h2>My Amazing Works!!!</h2>
+        <div class="projects-container">
+            <div class="project-box">
+                <div class="project-left">
+                    <img src="assets\projects\project1\project1-large-image.png" alt="Project 1 Main Image" class="project-large-image">
+                </div>
+                <div class="project-right">
+                    <div class="project-text">
+                        <h3>Complaint Segregation Application</h3>
+                        <p>Developed a powerful sentiment analysis program for Twitter data, streamlining the identification and classification of customer complaints to enhance business service and reputation. The solution automated tweet extraction using the SOAP protocol, integrated MBART to translate non-English tweets into English for accurate sentiment analysis, and employed the RoBERTa model to assess sentiment polarity and intensity. By leveraging sentiment scores to prioritize complaints, the system reduced manual testing by 80% and enabled targeted responses. It also featured visualization tools to track complaint trends and resolution effectiveness.</p>
+                        <a href="project1-link.html">VIEW PROJECT</a>
+                    </div>
+                    <div class="project-images">
+                        <img src="assets\projects\project1\project1-image1.jpg" alt="Project 1 Image 1" class="project-image">
+                        <img src="assets\projects\project1\project1-image2.jpg" alt="Project 1 Image 2" class="project-image">
+                        <img src="assets\projects\project1\project1-image3.jpg" alt="Project 1 Image 3" class="project-image">
+                        <img src="assets\projects\project1\project1-image4.jpg" alt="Project 1 Image 4" class="project-image">
+                    </div>
+
+                </div>
+            </div>
+            <div class="project-box">
+                <div class="project-left">
+                    <img src="assets\projects\project2\project2.jpeg" alt="Project 2 Main Image" class="project-large-image">
+                </div>
+                <div class="project-right">
+                    <div class="project-text">
+                        <h3>Uber Data Analytics using GCP Services</h3>
+                        <p>This project leverages the "NYC 2023" dataset and Google Cloud Platform (GCP) to enhance public transportation accessibility in urban areas. By analyzing data and collaborating with stakeholders, we aim to improve transit quality for all residents. The project involves data acquisition, processing with Mage ETL, storage in Google Cloud Storage, analysis in BigQuery, and visualization in Looker dashboards. Prioritizing data security and scalability, we measure success through increased ridership, accessibility, reduced congestion, and rider satisfaction. This project serves as a model for using GCP in urban transit solutions.</p>
+                        <a href="project2-link.html">VIEW PROJECT</a>
+                    </div>
+                    <div class="project-images">
+                        <img src="assets\projects\project2\image1.png" alt="Project 2 Image 1" class="project-image">
+                        <img src="assets\projects\project2\image2.png" alt="Project 2 Image 2" class="project-image">
+                        <img src="assets\projects\project2\image3.png" alt="Project 2 Image 3" class="project-image">
+                        <!--<img src="project2-image4.jpg" alt="Project 2 Image 4" class="project-image">-->
+                    </div>
+
+                </div>
+            </div>
+            <div class="project-box">
+                <div class="project-left">
+                    <img src="assets\projects\project3\tableau.jpg" alt="Project 2 Main Image" class="project-large-image">
+                </div>
+                <div class="project-right">
+                    <div class="project-text">
+                        <h3>Tableau Projects</h3>
+                        <p>This project leverages the "NYC 2023" dataset and Google Cloud Platform (GCP) to enhance public transportation accessibility in urban areas. By analyzing data and collaborating with stakeholders, we aim to improve transit quality for all residents. The project involves data acquisition, processing with Mage ETL, storage in Google Cloud Storage, analysis in BigQuery, and visualization in Looker dashboards. Prioritizing data security and scalability, we measure success through increased ridership, accessibility, reduced congestion, and rider satisfaction. This project serves as a model for using GCP in urban transit solutions.</p>
+                        <a href="project2-link.html">VIEW PROJECT</a>
+                    </div>
+                    <div class="project-images">
+                        <img src="assets\projects\project3\image1.png" alt="Project 2 Image 1" class="project-image">
+                        <img src="assets\projects\project3\image2.png" alt="Project 2 Image 2" class="project-image">
+                        <img src="assets\projects\project3\image3.png" alt="Project 2 Image 3" class="project-image">
+                        <img src="assets\projects\project3\image4.png" alt="Project 2 Image 4" class="project-image">
+                    </div>
+
+                </div>
+            </div>
+            <!-- Add more project boxes as needed -->
+        </div>
+    </section>
+
+    <section id="contact-section">
+        <h1>Contact...</h1>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Have a Data Project? Let's Collaborate!</h2>
+                <p>If you have any questions or need my expertise, feel free to reach out. Fill out the form and I'll get back to you as soon as possible.</p>
+                <div class="contact-details">
+                    <p><strong>Address:</strong> Aurora, Illinois, USA</p>
+                    <p><strong>Phone:</strong> +1 779 390 8922</p>
+                    <p><strong>Email:</strong> <a href="mailto:santhoshkumarsures@lewisu.edu">santhoshkumarsures@lewisu.edu</a></p>
+                </div>
+                <div class="social-icons">
+                    <label for="LinkedIn-icon"><strong>LinkedIn:</strong></label>
+                    <a id="LinkedIn-icon" href="http://www.linkedin.com/in/s-santhosh-kumar-/"><img src="assets/contact/linkedIn.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="e.g John Doe">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="e.g johndoe@mail.com">
+
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write message..."></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="resume-section">
+        <h1>My Resume / CV</h1>
+        <div class="resume-container">
+            <div class="resume-display">
+                <iframe src="assets\resume.pdf" width="100%" height="1000px"></iframe>
+            </div>
+            <!--<a href="assets\resume.pdf" download="Santhosh_Resume.pdf" class="resume-link">Download Resume/CV</a>-->
+        </div>
+    </section>
+
+
+
+
+
+
+
+
